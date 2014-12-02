@@ -9,8 +9,6 @@
 (hash-map :a 1 :b 2)
 (apply hash-map [:a 1 :b 2])
 
-(do-something-with-a-colored-point  :x 1 :y 2 :color "red")
-(do-something-with-a-colored-point :color "red" :y 2 :x 1)
 (def do-something-with-a-colored-point
   (fn [& args]
     (apply hash-map args)))
@@ -108,6 +106,8 @@
                                   (Point 0 10)
                                   (Point 10 0)))
 ; END COPY/PASTE BOILERPLATE
+
+; Exercise 1
 
 
 
